@@ -1,0 +1,532 @@
+/*Improved boiler plate from the internet*/
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+/*Improved boiler plate from the internet*/
+
+:root {
+  --purple-color: #A7B3FC;
+  --orange-color: #F0C58C;
+  --green-color: #4ACFAC;
+  --light-color: #FFFFFF;
+  --light-grey-color:#B9B9B9;
+  --dark-color-background: #18191A;
+  --hover: rgba(0, 0, 0, 0.9);
+}
+
+body {
+  background-color: var(--dark-color-background);
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+  font-style: normal;
+  font-weight: 500;
+}
+footer{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.h1-cm{
+  color: var(--light-color);
+  font-weight: 900;
+  font-size: 78px;
+}
+
+.h2-cm{
+  color: var(--light-color);
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.h3-cm{
+  color: var(--light-color);
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.h4-cm{
+  color: var(--light-grey-color);
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.h5-cm{
+  color: var(--light-grey-color);
+  font-weight: 300;
+  font-size: 24px;
+}
+.h6-cm{
+  color: var(--dark-color-background);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.a-cm{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+
+.btn-outline {
+  font-weight: 600;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  font-size: 18px;
+  transition: all 1s ease;
+  width: 160px;
+  height: 44px;
+  margin: 5px;
+}
+.btn-outline:hover {
+  color: var(--dark-color-background);
+}
+.btn-outline-light {
+  border: 2px solid var(--light-color);
+  color: var(--light-color);
+}
+.btn-outline-light:hover {
+  background-color: var(--light-color); /* Background color on hover */
+}
+.btn-outline-green{
+  color: var(--green-color);
+  border: 2px solid var(--green-color);
+}
+.btn-outline.btn-outline-green:hover{
+  background-color: var(--green-color);
+}
+.btn-outline-orange{
+  color: var(--orange-color);
+  border: 2px solid var(--orange-color);
+}
+.btn-outline-orange:hover{
+  background-color: var(--orange-color);
+}
+.btn-outline-purple{
+  color: var(--purple-color);
+  border: 2px solid var(--purple-color);
+}
+.btn-outline-purple:hover{
+  background-color: var(--purple-color);
+}
+
+.btn-filled {
+  border-width: 0;
+  color: var(--dark-color-background);
+  font-weight: 600;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  font-size: 24px;
+  transition: all 0.1s ease;
+  width: 180px;
+  height: 62px;
+  margin-top: 20px;
+}
+.btn-filled:hover {
+  /*color: var(--light-color);*/
+  /*border: 2px solid var(--light-color);*/
+  opacity: 0.8;
+
+}
+.btn-filled-green{
+  background-color: var(--green-color);
+}
+.btn-filled-orange{
+  background-color: var(--orange-color);
+}
+.btn-filled-purple{
+  background-color: var(--purple-color);
+}
+footer .btn-outline {
+  font-size: 16px;
+  height: 40px;
+  width: 195px;
+}
+
+
+.card{
+  margin-top: 10px;
+}
+
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.icon-button img {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-button:hover {
+  img{
+    opacity: 0.8;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .a-cm{
+
+  }
+  .h1-cm{
+    font-size: 42px;
+  }
+  .h2-cm{
+    font-size: 36px;
+  }
+  .h3-cm{
+    font-size: 24px;
+  }
+  .h4-cm{
+    font-size: 18px;
+  }
+  .h5-cm{
+    font-size: 16px;
+  }
+  .a-cm{
+    font-size: 16px;
+  }
+  .btn-filled , .btn-outline{
+    font-size: 16px;
+    height: 42px;
+    width: 100px;
+  }
+  footer .btn-outline {
+    font-size: 12px;
+    height: 25px;
+    width: 120px;
+  }
+
+  .card{
+    width: 10rem !important;
+  }
+  .h6-cm{
+    font-size: 10px;
+  }
+
+  .icon-button img {
+    width: 30px;
+    height: 30px;
+  }
+
+}
+#menu-projects{
+  margin-top: 50px;
+  width: 100%; /* Ensure the container takes the full width */
+  text-align: center; /* Center the inline-block children horizontally */
+
+  a{
+
+    text-decoration: none !important;
+  }
+}
+.card-menu{
+  display: inline-block; /* Make the cards inline-block to respect text-align */
+  margin: 15px; /* Add space between the cards */
+  width: 250px; /* Fixed width for cards */
+  height: 70px; /* Fixed height for cards */
+  background-color: var(--dark-color-background);
+  border: solid 1px var(--light-color);
+  border-radius: 6px;
+  text-align: center; /* Center text inside the card */
+  line-height: 70px; /* Vertically center the text using line height */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  span{
+    font-size: 28px;
+    font-weight: 700 !important;
+
+  }
+
+}
+
+.card-menu:hover{
+  background-color: var(--light-color);
+  span{
+    color: var(--dark-color-background) !important;
+  }
+
+}
+
+.project-main{
+  img{
+    width: 100%; /* Set relative width (e.g., 50% of container) */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent overflow */
+  }
+  .h5-cm{
+    font-size: 18px;
+  }
+
+
+}
+/* Gallery styles (same as before) */
+.gallery-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  background-color: #18191A;
+  border-radius: 8px;
+}
+
+.gallery-item {
+  display: inline-block;
+  margin-right: 10px;
+  width: 400px;
+  height: 250px;
+  background-color: var(--dark-color-background);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.gallery-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.lightbox-close:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive Iframe Styles */
+.responsive-iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px; /* Optional for rounded corners */
+}
+
+.responsive-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 150px;
+    height: 100px;
+  }
+
+  .lightbox-content {
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  .lightbox-close {
+    font-size: 24px;
+    top: 10px;
+    right: 20px;
+  }
+}
